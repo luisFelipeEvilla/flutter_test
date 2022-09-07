@@ -32,6 +32,7 @@ class _TextFormExampleState extends State<TextFormExample> {
               TextFormField(
                 controller: _emailController,
                 decoration: const InputDecoration(labelText: 'Email'),
+                key: const Key("email"),
                 validator: (value) {
                   if (value!.isEmpty) {
                     return "Enter email";
